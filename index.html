@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site's House</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site__container">
+        <header class="container header__container">
+            <ul class="header__top__list">
+                <li class="header__top__list__item">
+                    <img class="header__logo" src="img/header-logo.svg" alt="Логотип компании">
+                </li>
+                <li class="header__top__list__item">
+                    <p class="header__top__text">
+                        Увеличиваем продажи в Вашем бизнесе!
+                    </p>
+                </li>
+                <li class="header__top__list__item">
+                    <a href="tel:+74872792910" class="header__top__tel">
+                        +7 (4872) 79-29-10
+                    </a>
+                    <button class="header__top__order">
+                        <span class="header__top__icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2182_194)">
+                                    <path
+                                        d="M18.3334 14.1V16.6C18.3344 16.8321 18.2868 17.0618 18.1939 17.2745C18.1009 17.4871 17.9645 17.678 17.7935 17.8349C17.6225 17.9918 17.4206 18.1112 17.2007 18.1856C16.9809 18.2599 16.7479 18.2876 16.5168 18.2667C13.9525 17.988 11.4893 17.1118 9.32511 15.7083C7.31163 14.4289 5.60455 12.7218 4.32511 10.7083C2.91676 8.53433 2.04031 6.05916 1.76677 3.48333C1.74595 3.25288 1.77334 3.02063 1.84719 2.80135C1.92105 2.58207 2.03975 2.38057 2.19575 2.20968C2.35174 2.03879 2.54161 1.90225 2.75327 1.80876C2.96492 1.71527 3.19372 1.66688 3.42511 1.66666H5.92511C6.32953 1.66268 6.7216 1.80589 7.02824 2.0696C7.33488 2.33332 7.53517 2.69953 7.59177 3.09999C7.69729 3.90005 7.89298 4.6856 8.17511 5.44166C8.28723 5.73993 8.31149 6.06409 8.24503 6.37573C8.17857 6.68737 8.02416 6.97342 7.80011 7.2L6.74177 8.25833C7.92807 10.3446 9.65549 12.072 11.7418 13.2583L12.8001 12.2C13.0267 11.9759 13.3127 11.8215 13.6244 11.7551C13.936 11.6886 14.2602 11.7129 14.5584 11.825C15.3145 12.1071 16.1001 12.3028 16.9001 12.4083C17.3049 12.4654 17.6746 12.6693 17.9389 12.9812C18.2032 13.2931 18.3436 13.6913 18.3334 14.1Z"
+                                        stroke="#FF5900" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2182_194">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        Заказать звонок
+                    </button>
+                    <button id="burger" class="header__burger">
+                        <span class="header__burger-stick"></span>
+                    </button>
+                </li>
+            </ul>
+            <ul class="header__bottom__list">
+                <li class="header__bottom__list__item header__bottom__dropdown__list__item">
+                    <a href="#" class="header__bottom__link header__bottom__arrow">
+                        УВЕЛИЧЕНИЕ ПРОДАЖ
+                        <svg class="header__bottom__dropdown__arrow" width="10" height="6" viewBox="0 0 10 6"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 5.5L0 0.500015H10L5 5.5Z" fill="#212121" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        СОЗДАНИЕ САЙТОВ
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        ПОДДЕРЖКА
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        БИТРИКС 24
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        О КОМПАНИИ
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        ОТЗЫВЫ
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link">
+                        КЕЙСЫ
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#contact" class="header__bottom__link">
+                        КОНТАКТЫ
+                    </a>
+                </li>
+                <li class="header__bottom__list__item">
+                    <a href="#" class="header__bottom__link header__bottom__search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 21L16.65 16.65" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__dropdown__list">
+                <li class="header__dropdown__list__item">
+                    <a href="#" class="header__dropdown__link">
+                        Пункт 1
+                    </a>
+                    <svg class="hit" width="36" height="16" viewBox="0 0 36 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.41096 0H36V16H6.41096L0 8L6.41096 0Z" fill="#FF5900" />
+                        <path
+                            d="M12.13 5L13.58 7.12L15.03 5H16.93L14.6 8.35L17.12 12H15.21L13.58 9.68L11.97 12H10.1L12.6 8.42L10.26 5H12.13ZM17.8622 5H19.4722V9.56L22.8122 5H24.3322V12H22.7322V7.45L19.3922 12H17.8622V5ZM31.4251 6.32H29.1851V12H27.5851V6.32H25.3551V5H31.4251V6.32Z"
+                            fill="white" />
+                    </svg>
+                </li>
+                <li class="header__dropdown__list__item">
+                    <a href="#" class="header__dropdown__link">
+                        SEO Продвижение сайтов в яндекс
+                    </a>
+                </li>
+                <li class="header__dropdown__list__item">
+                    <a href="#" class="header__dropdown__link">
+                        Поведение бизнеса в социальных сетях
+                    </a>
+                </li>
+                <li class="header__dropdown__list__item">
+                    <a href="#" class="header__dropdown__link">
+                        Пункт 4
+                    </a>
+                </li>
+            </ul>
+
+            <form action="POST" class="header__bottom__form">
+                <input class="header__bottom__input" type="search" name="search" placeholder="Поиск по сайту">
+            </form>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__heading">
+                            Комплексный интернет-маркетинг
+                        </h1>
+                        <p class="hero__description">
+                            Мы помогаем бизнесу находить клиентов быстрее, интегрируя маркетинговые,
+                            обучающие&nbspи&nbspтехнологические продукты
+                        </p>
+                        <div class="hero__btns">
+                            <a href="#" class="hero__btn hero__btn-left">
+                                Заказать увеличение продаж
+                            </a>
+                            <a href="#" class="hero__btn hero__btn-right">
+                                Заказать экспертный аудит
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container contact__container">
+                    <div class="contact__left">
+                        <h2 class="contact__headline">
+                            Контакты
+                        </h2>
+                        <p class="contact__text">
+                            Обязательно приходите к нам на чашку ароматного кофе. Совместно обсудим ваш проект и
+                            предложим рекомендации!
+                        </p>
+                        <div class="contact__left__bottom">
+                            <div class="contact__left__bottom-left">
+                                <h3 class="contact__capture">
+                                    Адрес
+                                </h3>
+                                <p class="contact__text contact__bottom__text">
+                                    г. Тула, пр-т Ленина, д. 102б, оф. 301
+                                </p>
+                                <h3 class="contact__capture">
+                                    Режим работы
+                                </h3>
+                                <p class="contact__text contact__bottom__text">
+                                    Пн. - Пт.: 10.00 - 18.00 Сб.&nbsp-&nbspВс.: выходной
+                                </p>
+                            </div>
+                            <div class="contact__left__bottom-right">
+                                <h3 class="contact__capture">
+                                    Свяжитесь с нами
+                                </h3>
+                                <p class="contact__text contact__bottom__text">
+                                    +7 (4872) 44-04-79 tula@domsaitov.ru
+                                </p>
+                                <div class="contact__links">
+                                    <a href="#" class="socials contact__vk">
+                                        <svg class="contact__icon" width="40" height="40" viewBox="0 0 40 40"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.139 0H13.8603C2.65527 0 -0.000976562 2.65625 -0.000976562 13.8612V26.14C-0.000976562 37.345 2.65527 40.0013 13.8603 40.0013H26.139C37.344 40.0013 40.0003 37.345 40.0003 26.14V13.8612C40.0003 2.65625 37.3178 0 26.139 0ZM32.2915 28.535H29.3878C28.2878 28.535 27.949 27.6625 25.9703 25.6575C24.2515 23.9912 23.4903 23.77 23.0665 23.77C22.4678 23.77 22.2978 23.9388 22.2978 24.76V27.3837C22.2978 28.0875 22.0765 28.51 20.214 28.51C17.134 28.51 13.7165 26.6475 11.3203 23.1775C7.70652 18.0925 6.71777 14.2837 6.71777 13.4963C6.71777 13.0725 6.88652 12.6762 7.70027 12.6762H10.6103C11.3465 12.6762 11.6265 13.015 11.9128 13.8025C13.3515 17.9562 15.7478 21.595 16.7365 21.595C17.1015 21.595 17.2703 21.4263 17.2703 20.495V16.205C17.159 14.2262 16.1178 14.0562 16.1178 13.3537C16.1178 13.015 16.3978 12.6762 16.8465 12.6762H21.4228C22.0415 12.6762 22.269 13.015 22.269 13.7437V19.5312C22.269 20.1562 22.549 20.3775 22.7178 20.3775C23.0828 20.3775 23.3953 20.1562 24.0715 19.4788C26.1615 17.135 27.659 13.5213 27.659 13.5213C27.854 13.0975 28.1928 12.7013 28.929 12.7013H31.839C32.7115 12.7013 32.9065 13.15 32.7115 13.775C32.3465 15.4675 28.7853 20.4938 28.7853 20.4938C28.479 21.0013 28.3615 21.2225 28.7853 21.7887C29.0978 22.2125 30.114 23.0913 30.7903 23.8787C32.034 25.2913 32.9903 26.4762 33.2453 27.2962C33.5315 28.11 33.109 28.5337 32.2878 28.5337L32.2915 28.535Z"
+                                                fill="#FF5900" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="socials contact__telegram">
+                                        <svg class="contact__icon" width="40" height="40" viewBox="0 0 40 40"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.5402 29.1741L29.8214 13.7054C29.9554 13.0506 29.8772 12.5818 29.5871 12.2991C29.2969 12.0164 28.9137 11.9643 28.4375 12.1429L9.15179 19.5759C8.72024 19.7396 8.42634 19.9256 8.27009 20.1339C8.11384 20.3423 8.09524 20.5394 8.21429 20.7254C8.33333 20.9115 8.57143 21.0565 8.92857 21.1607L13.8616 22.7009L25.3125 15.4911C25.625 15.2827 25.8631 15.2381 26.0268 15.3571C26.131 15.4315 26.1012 15.5432 25.9375 15.692L16.6741 24.0625L16.317 29.1518C16.6592 29.1518 16.994 28.9881 17.3214 28.6607L19.7321 26.3393L24.7321 30.0223C25.6845 30.558 26.2872 30.2753 26.5402 29.1741ZM40 20C40 22.7083 39.4717 25.2976 38.4152 27.7679C37.3586 30.2381 35.9375 32.3661 34.1518 34.1518C32.3661 35.9375 30.2381 37.3586 27.7679 38.4152C25.2976 39.4717 22.7083 40 20 40C17.2917 40 14.7024 39.4717 12.2321 38.4152C9.7619 37.3586 7.63393 35.9375 5.84821 34.1518C4.0625 32.3661 2.64137 30.2381 1.58482 27.7679C0.528274 25.2976 0 22.7083 0 20C0 17.2917 0.528274 14.7024 1.58482 12.2321C2.64137 9.7619 4.0625 7.63393 5.84821 5.84821C7.63393 4.0625 9.7619 2.64137 12.2321 1.58482C14.7024 0.528274 17.2917 0 20 0C22.7083 0 25.2976 0.528274 27.7679 1.58482C30.2381 2.64137 32.3661 4.0625 34.1518 5.84821C35.9375 7.63393 37.3586 9.7619 38.4152 12.2321C39.4717 14.7024 40 17.2917 40 20Z"
+                                                fill="#FF5900" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__right">
+                    <div id="map" class="map"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <ul class="footer__left__list">
+                        <li class="footer__left__list__item footer__left__list__item-logo">
+                            <a href="#" class="footer__logo__link">
+                                <img class="footer__logo" src="img/footer-logo.svg" alt="Логотип компании">
+                            </a>
+                        </li>
+                        <li class="footer__left__list__item footer__left__list__item-geo">
+                            <p class="footer__geo">
+                                Ваш регион: <span class="text__decor">Тула</span>
+                            </p>
+                        </li>
+                        <li class="footer__left__list__item footer__left__list__item-adress">
+                            <a href="tel:+74952236659" class="footer__tel">
+                                +7(495)223-66-59
+                            </a>
+                            <p class="footer__adress">
+                                г.Тула,ул.Пушкинская,27
+                            </p>
+                        </li>
+                        <li class="footer__left__list__item footer__left__list__item-docs">
+                            <p class="footer__docs">
+                                ИНН 123456789
+                            </p>
+                            <p class="footer__docs">
+                                ОГРН 123456789010
+                            </p>
+                        </li>
+                        <li class="footer__left__list__item">
+                            <a href="#" class="footer__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.1387 0H13.86C2.655 0 -0.00125122 2.65625 -0.00125122 13.8612V26.14C-0.00125122 37.345 2.655 40.0013 13.86 40.0013H26.1387C37.3437 40.0013 40 37.345 40 26.14V13.8612C40 2.65625 37.3175 0 26.1387 0ZM32.2912 28.535H29.3875C28.2875 28.535 27.9487 27.6625 25.97 25.6575C24.2512 23.9912 23.49 23.77 23.0662 23.77C22.4675 23.77 22.2975 23.9388 22.2975 24.76V27.3837C22.2975 28.0875 22.0762 28.51 20.2137 28.51C17.1337 28.51 13.7162 26.6475 11.32 23.1775C7.70625 18.0925 6.7175 14.2837 6.7175 13.4963C6.7175 13.0725 6.88625 12.6762 7.7 12.6762H10.61C11.3462 12.6762 11.6262 13.015 11.9125 13.8025C13.3512 17.9562 15.7475 21.595 16.7362 21.595C17.1012 21.595 17.27 21.4263 17.27 20.495V16.205C17.1587 14.2262 16.1175 14.0562 16.1175 13.3537C16.1175 13.015 16.3975 12.6762 16.8462 12.6762H21.4225C22.0412 12.6762 22.2687 13.015 22.2687 13.7437V19.5312C22.2687 20.1562 22.5487 20.3775 22.7175 20.3775C23.0825 20.3775 23.395 20.1562 24.0712 19.4788C26.1612 17.135 27.6587 13.5213 27.6587 13.5213C27.8537 13.0975 28.1925 12.7013 28.9287 12.7013H31.8387C32.7113 12.7013 32.9062 13.15 32.7113 13.775C32.3462 15.4675 28.785 20.4938 28.785 20.4938C28.4787 21.0013 28.3612 21.2225 28.785 21.7887C29.0975 22.2125 30.1137 23.0913 30.79 23.8787C32.0337 25.2913 32.99 26.4762 33.245 27.2962C33.5312 28.11 33.1087 28.5337 32.2875 28.5337L32.2912 28.535Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.5402 29.1741L29.8214 13.7054C29.9554 13.0506 29.8772 12.5818 29.5871 12.2991C29.2969 12.0164 28.9137 11.9643 28.4375 12.1429L9.15179 19.5759C8.72024 19.7396 8.42634 19.9256 8.27009 20.1339C8.11384 20.3423 8.09524 20.5394 8.21429 20.7254C8.33333 20.9115 8.57143 21.0565 8.92857 21.1607L13.8616 22.7009L25.3125 15.4911C25.625 15.2827 25.8631 15.2381 26.0268 15.3571C26.131 15.4315 26.1012 15.5432 25.9375 15.692L16.6741 24.0625L16.317 29.1518C16.6592 29.1518 16.994 28.9881 17.3214 28.6607L19.7321 26.3393L24.7321 30.0223C25.6845 30.558 26.2872 30.2753 26.5402 29.1741ZM40 20C40 22.7083 39.4717 25.2976 38.4152 27.7679C37.3586 30.2381 35.9375 32.3661 34.1518 34.1518C32.3661 35.9375 30.2381 37.3586 27.7679 38.4152C25.2976 39.4717 22.7083 40 20 40C17.2917 40 14.7024 39.4717 12.2321 38.4152C9.7619 37.3586 7.63393 35.9375 5.84821 34.1518C4.0625 32.3661 2.64137 30.2381 1.58482 27.7679C0.528274 25.2976 0 22.7083 0 20C0 17.2917 0.528274 14.7024 1.58482 12.2321C2.64137 9.7619 4.0625 7.63393 5.84821 5.84821C7.63393 4.0625 9.7619 2.64137 12.2321 1.58482C14.7024 0.528274 17.2917 0 20 0C22.7083 0 25.2976 0.528274 27.7679 1.58482C30.2381 2.64137 32.3661 4.0625 34.1518 5.84821C35.9375 7.63393 37.3586 9.7619 38.4152 12.2321C39.4717 14.7024 40 17.2917 40 20Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__mid__left">
+                        <h4 class="footer__desc">
+                            Увеличение продаж для&nbspвашего бизнеса
+                        </h4>
+                        <ul class="footer__mid__left__list">
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    SEO
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Тариф "Трафик"
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Тариф "Объем работ"
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Тариф "Лиды/СРА"
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Тариф "SEO + Контекст"
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Комплексное SEO
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Для интернет-магазина
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Продвижение в Яндекс
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Продвижение в Google
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Разовые работы
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    SEO-аудит сайтов
+                                </a>
+                            </li>
+                            <li class="footer__mid__left__list__item">
+                                <a href="#" class="footer__link">
+                                    Вывод из-под санкций
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__mid__right">
+                        <h4 class="footer__desc">
+                            РАЗРАБОТКА И&nbspПОДДЕРЖКА САЙТОВ
+                        </h4>
+                        <ul class="footer__mid__right__list">
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Разработка
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    На 1С-Битрикс
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    На WordPress
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    На Tilda
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Сайт-визитка
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Интернет-магазин
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Проектирование
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Поддержка сайтов
+                                </a>
+                            </li>
+                            <li class="footer__mid__right__list">
+                                <a href="#" class="footer__link">
+                                    Внесение доработок
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <h4 class="footer__desc">
+                            Компания "Дом&nbspСайтов"
+                        </h4>
+                        <ul class="footer__right__list">
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Клиенты и отзывы
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Работа в Demis Group
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Личный кабинет
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Статьи
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Публичная оферта
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Партнерская программа
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Гарантии
+                                </a>
+                            </li>
+                            <li class="footer__right__list__item">
+                                <a href="#" class="footer__link">
+                                    Внесение доработок
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__policy">
+                    <p class="footer__policy__text">
+                        © 2008-2022 Компания «ДОМ САЙТОВ»
+                    </p>
+                    <p class="footer__policy__text">
+                        Карта сайта | Политика конфиденциальности
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
